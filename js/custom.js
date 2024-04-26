@@ -11,28 +11,10 @@ $(window).scroll(function() {
 });
 
 //changing logo url in sticky
-var initialSrc = "images/logo.png";
-var scrollSrc = "images/logo.png";
+var initialSrc = "./images/logo.png";
+var scrollSrc = "./images/logo.png";
 
-$(window).scroll(function() {
-    var value = $(this).scrollTop();
-    if (value > 50)
-        $(".logo").attr("src", scrollSrc);
-    else
-        $(".logo").attr("src", initialSrc);
-});
 
-var scroolSign = "images/login.svg";
-var scrooloff = "images/login-white.svg";
-
-$(window).scroll(function() {
-    var value_one = $(this).scrollTop();
-    if(value_one > 50)
-        $(".signin").attr("src", scroolSign);
-    else 
-        $(".signin").attr("src", scrooloff);
-
-});
 
 
 // //log-slier-wrap-slider
